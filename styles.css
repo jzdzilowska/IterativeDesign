@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Manifont Grotesk';
+  src: url('assets/fonts/manifont/ManifontGroteskBook-webfont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Abordage'; 
+  src: url('assets/fonts/abordage/Abordage-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100vw; 
+  font-family: 'Manifont Grotesk', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0;
+  background-color: #ffffff;
+  color: #141414;
+  margin-block: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px; 
+}
+
+header {
+  width: 100%;
+  font-weight: 500;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+  border-bottom: #1c1c1c 3px dotted;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h3 {
+  width: 50%;
+  font-size:17px;
+  text-align: justify;
+  text-align-last: center;
+
+}
+h1 {
+  margin-top:30px;
+  margin-bottom: -5px;
+}
+
+h2 {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin: 0px; 
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 25px;
+  margin-block: 0;
+}
+
+.section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section h2 {
+  font-weight: 500;
+  font-size: 45px;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-style: italic;
+}
+
+.section img {
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.section h3{
+  font-size: 17px;
+  text-align: justify;
+  text-align-last: center;
+}
+/* ----------------------------- PART 1 ----------------------------- */
+
+.questions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.questions ul {
+  width: 80%; margin: 0 auto; padding: 0; text-align: center;
+}
+
+.cloud-textbox {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px dotted #000;
+  background-color: #fff;
+  font-size: 18px;
+  color: #000;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  width: 100%;
+}
+
+.cloud-textbox:hover {
+  animation: shiver 0.5s infinite ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes shiver {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+.sketch img, .storyboard img {
+  margin-top: 10px; 
+  height: 500px;
+  width: auto;
+}
+
+/* ----------------------------- PART 2 ----------------------------- */
+
+.notes-container {
+  display: flex;
+  gap: -20px;
+  position: relative;
+  justify-content: center;
+}
+
+.post-it {
+  width: 150px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: rotate(var(--rotation));
+  z-index: var(--index);
+  margin-left: -10px;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  transition: margin 0.5s ease-in-out; /* Smooth transition over 0.5s */
+}
+
+.post-it p {
+  font-family: 'Abordage', sans-serif;
+  font-weight: 100;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post-it:nth-child(1) { background-color: #240115; --rotation: -3deg; --index: 1; color: white}
+.post-it:nth-child(2) { background-color: #F3DAD8; --rotation: 2deg; --index: 2; }
+.post-it:nth-child(3) { background-color: #DE3C4B; --rotation: -2deg; --index: 3; }
+.post-it:nth-child(4) { background-color: #87F5FB; --rotation: 1deg; --index: 4; }
+.post-it:nth-child(5) { background-color: #2F131E; --rotation: -1deg; --index: 5; color:white}
+
+.post-it:hover {
+  animation: shiver 1s infinite ease-in-out;
+  z-index: 1000;
+  margin-right: 10px; /* Or whatever larger margin you want */
+  margin-left:10px;
+}
+
+/* ----------------------------- PART 3 ----------------------------- */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  text-align-last: center;
+  opacity: 90%;
+}
+
+
+.popup button {
+  font-family: 'Abordage', sans-serif;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-width: 0px; 
+}
+
+/* ----------------------------- PART 4 ----------------------------- */ 
+.personas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.personas img {
+  width: 400px;
+  height: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin-top:20px;
+  cursor: help;
+}
+
+.persona {
+  width: 480px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.persona img[alt="Empathy Map for Anxious Amber - the unsure freshman"] { 
+  transform: rotate(-3deg); 
+}
+.persona img[alt="Empathy Map for Joyful Jamie - the confident senior"] { 
+  transform: rotate(3deg); 
+  margin-top:32px;
+}
+
+.persona img[alt="Empathy Map for Anxious Amber - the unsure freshman"]:hover {
+  animation: shiver 0.7s infinite ease-in-out;
+}
+
+.persona img[alt="Empathy Map for Joyful Jamie - the confident senior"]:hover {
+  animation: shiver2 0.7s infinite ease-in-out;
+}
+
+@keyframes shiver {
+  0%, 100% { transform: rotate(-3deg); }
+  25% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
+
+@keyframes shiver2 {
+  0%, 100% { transform: rotate(3deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+
+footer a {
+  background:black; 
+  color: white;
+  font-style:italic; 
+  text-decoration: none;
+  padding: 3px;
+}
+
+footer a:hover {
+  background: white;
+  color: black;
+}

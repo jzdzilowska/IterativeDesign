@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/pog7ryn.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas and Storyboarding</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPopup(question, answer) {
+            const popup = document.createElement('div');
+            popup.className = 'popup';
+            popup.innerHTML = `<h4>${question}</h4><p>${answer}</p><button onclick='closePopup(this)'>Close</button>`;
+            document.body.appendChild(popup);
+        }
+
+        function closePopup(button) {
+            document.body.removeChild(button.parentElement);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>PERSONAS</h1>
+        <h3><u>A case study on the Mail Room Kiosk.</u> Investigates a public interface by capturing users' diverse experiences & needs through interviews & observations, creating personas to assess how well the interface meets those needs.</h3>
+    </header>
+    <div class="container">
+        <section class="section">
+            <div class="questions">
+                <ul>
+                    <h2>   ...Questions asked...</h2>
+                    <div class="cloud-textbox" onclick="showPopup('What year are you in?', 'The question helps identify patterns between user experience and familiarity with the system. Usual responses showed that freshmen often reported more confusion with the card reader and login process, while upperclassmen were more efficient but still frustrated by technical glitches. This distinction helps evaluate whether the interface’s issues stem from poor design or lack of user familiarity - in this case, partially both.')">
+                        What year are you in? 
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('What was your first experience with the kiosk like?', 'Reveals how intuitive and user-friendly the system is for first-time users, providing insight into the accessibility of the interface without any onboarding assistance. It also helps identify whether confusion or frustration starts early and persists over time. The interviews revealed several consistent pain points - many users’ first experiences were marked by frustration, especially due to the unreliable card reader, which often required multiple swipes before recognizing Brown ID. Notably, when it failed - resulting in truncated login IDs - the lack of clear feedback was confusing on first use.')">
+                        What was your first experience with the kiosk like? 
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('Nowadays, how often do you use the kiosk?', 'Helps gauge user familiarity with the system and identify usage patterns. Responses showed that frequent users - most of them being sophmomores and juniors - tend to navigate the interface quickly, but are also more sensitive to technical glitches — particularly the unreliable card reader and system slowdowns — as they encounter them often. Infrequent users (mostly freshmen), on the other hand, struggle primarily with understanding the interface, especially when the system fails to provide clear feedback on error.')">
+                        Nowadays, how often do you use the kiosk? 
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('How important is time efficiency to you when using the kiosk?', 'Easier to respond to than ..When do you use the kiosk?.. as its more straightforward and easier to quantify (difficult to analyze usage over long periods). The question helps to indirectly identify whether users prioritize speed over other factors, such as convenience. The interviews showed that time efficiency is pivotal - most students mentioned using the kiosk in-between classes, rushing during short breaks. System failing, especially at times of peak usage, leads to frustration.')">
+                        How important is time efficiency to you when using the kiosk?
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('How intuitive do you find the kiosks digital display and the card reader?', 'Directly assesses the two primary interaction points users engage with, revealing whether the interface and hardware require additional effort to understand than whats provided. Responses showed that users found the digital display mostly clear, despite often hesitating before clicking the CONFIRM button. Most of them had difficulty with the card reader, which many found non-intuitive (no indication which side to swipe the card with, whether to simultaneously input login manually on the screen) often requiring multiple attempts to work.')">
+                        How intuitive do you find the kiosk's digital display and the card reader?
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('Have you encountered any difficulties while using it?', 'Opens the door for users to share any problems they’ve faced, without leading to specific issues. As mentioned above, responses commonly highlighted card reader malfunctions, where users had to swipe multiple times, and unclear feedback from the system, especially when it failed to register the login properly. Interestingly, one user mentioned one of the screens being positioned too low for taller students to see properly, suggesting a physical design issue. Another one emphasized the right-sided mounting of the reader, inconvenient for left-handed users.')">
+                        Have you encountered any difficulties while using it?
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('If you could change one thing about the kiosk, what would it be?', 'Encourages users to focus on the most pressing issue that impacts their experience, rather than opening a potentially overwhelming for the responder conversation on all experienced difficulties. As aforementioned, responses suggested improving the reliability of the card reader. Other suggestions included adding a manual log-in option that doesnt require a BrownID, as some students were numerously unable to pickup their packages because of a forgotten/lost ID, or only the reader malfunctioning.')">
+                        If you could change one thing about the kiosk, what would it be?
+                    </div>
+                    <div class="cloud-textbox" onclick="showPopup('What do you like about the kiosk?', 'Responses highlighted convenience and simplicity of the interface relative to other digital systems on campus. Users also appreciated the number of packages being shown on-screen.')">
+                        What do you like about the kiosk?
+                    </div>
+                </ul>
+            <div class="sketch">
+                <img src="assets/images/interface.png" alt="Sketch of Self-Checkout Station">
+            </div>
+        </div>
+
+        </section>
+        <section class="section">
+            <h2>...OBSERVATIONS...</h2>
+            <h3>Retrieved by observing 5+ students at Brown University using the Mail Room Kiosk to craft personas for interface evaluation.</h3>
+            <div class="notes-container">
+                <div class="post-it">Many users struggled with the card reader, often having to swipe their Brown ID multiple times before it was properly recognized.</div>
+                <div class="post-it">Users frequently showed signs of frustration, like sighing or repeatedly swiping their cards with increasing force.</div>
+                <div class="post-it">When the card reader failed, the system sometimes truncated the login ID, causing users to wait for the interface to reset before trying again. Freshmen (as interviews revealed) were particularly confused by this.</div>
+                <div class="post-it">After logging in, users generally found the digital display clear when showing the number of packages, but some hesitated before clicking "Confirm," suggesting the button’s function might not be immediately obvious.</div>
+                <div class="post-it">Time efficiency appeared to be a major concern — users often became impatient when delays occurred due to card reader issues or system resets.</div>
+              </div>
+        </section>
+
+        <section class="section">
+            <h2>...PERSONAS...</h2>
+            <h3>Crafted based on interviews and observations to provide realistic representations of different user types, <br> allowing for more user-centered design decisions and a better understanding of their needs, behaviors, and <br>pain points.</h3>
+            <div class="personas">
+                <div class="persona">
+                <h4>Anxious Amber</h4>
+                <p>A nervous freshman, new to the mail room kiosk, unsure about the process and uncomfortable with asking for help.</p>
+                <p><u>Interface Problems:</u> Lack of guidance on how to use the car reader properly. Confusing badges prohibiting from swiping the card twice (despite it often being the only way for the system to work). Unclear feedback when the card reader fails to recognize the Brown ID. Slow response times, leading to confusion. Lack of guidance on where to pick up the packages upon confirming.</p>
+                <img src="assets/images/persona2.png" alt="Empathy Map for Anxious Amber - the unsure freshman" onclick="showPopup('Why is this a good representation?', 'This persona embodies users who are new to Browns Mail Room, most of them being freshmen. Amber’s struggles — like unclear instructions, lack of feedback from the card reader, and confusion over how to proceed with package pick up - reflect the experience of many beginner users. These issues make the interface intimidating and frustrating, increasing their anxiety.')">
+            </div>
+            <div class="persona">
+                <h4>Efficient Jamie</h4>
+                <p>A busy, but confident senior juggling multiple responsibilities and rushing to complete tasks, well-acquainted with the mail room kiosk.</p>
+                <p><u>Interface Problems:</u> Poor card reader design (mounted on only one side and uncomfortable to use). Unreliability of the reading system (doesn't always work on one swipe). Slow response times, the need for subsequent confirmation.</p>
+                <img src="assets/images/persona1.png" alt="Empathy Map for Joyful Jamie - the confident senior" onclick="showPopup('Why is this a good representation?', 'This persona represents experienced users who are familiar with the system but face inefficiencies that slow them down, and are annoyance- rather than anxiety-inducing. Jamie’s frustration with poor card reader design (mounted on just one side of the screen), its malfunctioning (truncated login, need for re-swipes), slow response times, and the additional confirmation step on pick-up highlights the need for a more streamlined interface. Jamie’s experience reflects the needs of busy users who expect speed and convenience but are held back by technical limitations.')">
+            </div>
+        </div>
+        </section>
+
+        <section class="section">
+            <h2>...Efficient Jamie's Storyboard...</h2>
+            <h3>Visually maps out the interaction with the kiosk of a well-acquainted with the system user, helping to<br>illustrate their experience, emotions, and difficulties faced step by step to identify areas for improvement.</h3>
+            <img src="assets/images/storyboard.png" alt="Efficient Jamie's Storyboard, showing her process of using the kiosk.">
+        </section>
+    </div>
+    <footer>
+        <p>Created with love by <a href="https://github.com/jzdzilowska">@jzdzilowska</a></p>
+</body>
+</html>
