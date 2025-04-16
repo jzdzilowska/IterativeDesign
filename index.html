@@ -93,69 +93,59 @@
         <section class="section">
             <h2>Critiques</h2>
             <h3>
-              We received feedback on our low-fi prototypes and, through discussions with a mentor, were able to rework our initial ideas based on the criticisms. Please press on the boxes for more expanded descriptions<br>
-
+              Having received feedback and clarifications from the company, through discussions with a mentor regarding the lo-fi prototypes, we <br> reworked our initial proposal. Press on the boxes for a detailed overview of the changes made.<br>
             </h3>
             <div class="questions">
                 <ul>
-                    <div class="cloud-textbox" style="background-color: #240215; color: white; border: 2px dotted #fff" onclick="showPopup('We were told to reconsider our starting screen. Right now it is bombarding the user with instructions, it is almost an onboarding to the onboarding and may be too complicated. We reconsidered and thought it may be better to introduce the user to an outline of all the tasks that they have to do and keep it to minimal instructions to not overload the user with information.')">
+                    <div class="cloud-textbox" style="background-color: #fdda5b; border: 2px dotted #fff" onclick="showPopup('Starting Screen', 'We were told to reconsider our starting screen. In the initial proposal, it was bombarding the user with instructions, requiring almost an onboarding to the onboarding (as referred to by our mentor) which was overly complicated. Thus, we decided to limit the number of guidelines presented to the user on the start, instead offering them an outline of all to-be-completed tasks to not overlod them with information.')">
                         Starting Screen
                     </div>
-                    <div class="cloud-textbox" style="background-color: #F3DAD8;" onclick="showPopup('While the wizard was a solution to the problem we were told to reconsider whether it was the best solution. Would users actually use it? Will it slow them down? Is it effective way of giving them the information? Is it intuative? We were advised not to reinvent the wheel and use what is conventional. Upon revision we found this to be a question mark where you can hover over the hints.')">
+                    <div class="cloud-textbox" style="background-color: #F5F5F5;" onclick="showPopup('Wizard', 'While the wizard was our immediate solution to the potentially confusing onboarding, we began wondering whether it would be useful at all. Having reflected on our own experiences, we started questioning - would users actually use it? Certainly, it would slow them down, which would be irritable for teams well-immersed in similar processes. Would it provide crucial information effectively, while remaining intuitive in use? Upon exploring the onboarding UIs of well-established sites - Uber, Workday, Linkedin... - we decided to keep it all conventional, recognizing that the simplest, traditional methods of presenting information are omnipresent for a reason. Upon revision, we settled on offering users easily understandable question mark icons, which, upon hovering, would expand sought-after hints.')">
                         Wizard
                     </div>
-                    <div class="cloud-textbox" style="background-color: #872735; color: white; border: 2px dotted #fff" onclick="showPopup('Was using a carosel optimal for allowing the users to toggle between tasks? What if they want to toggle between tasks that are not consectuive? While this may be an aesthetic solution is it the most efficient and intuative? Upon reflection we decided to remove the carosel completely and display the tasks independently.')">
-                        Carosel
+                    <div class="cloud-textbox" style="background-color: #fdda5b; border: 2px dotted #fff" onclick="showPopup('Carousel', 'Our initial proposal included a carousel view of the to-be-completed tasks, with each one presented as a card. To navigate between them, user would either X on that card, or use arrows, with the surrounding tasks replacing the previous in an acordeon-like motion. We have been told to reconsider whether the aforementioned method of toggling between them is intuitive and quick enough - especially for a user trying to toggle between non-consecutive tasks. While the carousel view introduced playfulness to the HCI and matched the companys visual branding, it was rather impractical. Upon reflecting on what should be prioritized when developing interfaces - in UI/UX dev, function over form! - we have decided to remove the carousel completely and display the tasks independently.')">
+                        Carousel
                     </div>
-                    <div class="cloud-textbox" style="background-color: #DE3C4C;" onclick="showPopup('We were told that we still cannot toggle and skip between tasks super effectively. The solution we came up with was to add a sidebar which displays all the tasks allowing users to toggle to and revisit tasks with more ease as opposed to only being able to toggle one task ahead and one task behind.')">
-                        Toggling between tasks
+                    <div class="cloud-textbox" style="background-color: #F5F5F5;" onclick="showPopup('Toggling','We were told that our initial method of toggling between tasks - via arrows, with all tasks shown in a linear order, and only preceding/current/next task visible - is cumbersome, even upon having removed the carousel view. The solution we came up with was adding a sidebar which displays an outline of all the onboarding tasks, allowing users to quickly click between them as opposed to only navigate to one task ahead and one task behind.')">
+                        Toggling between Tasks
                     </div>
-                    <div class="cloud-textbox" style="background-color: #240215; color: white; border: 2px dotted #fff" onclick="showPopup('There were alot of questions around the use of the reminders. Would users only get reminded for optional tasks? all tasks? Would users actually use the reminders tags at all. After reflection we removed the reminders and decided to completely replace them with pop-up messages alerting the user that they have unfinished sub-tasks. Instead of being reminded later, now the task itself will just not be shown as complete. Users can distinguish between completed and uncompleted tasks through checkmarks and styling changes that appear.')">
+                    <div class="cloud-textbox" style="background-color: #fdda5b; border: 2px dotted #fff" onclick="showPopup('Reminders', 'We have been asked numerous questions regarding the use (and purpose) of reminders, which were supposed to notify the users of not-yet-completed, or marked-for-completion questions. Would users only get reminded of optional tasks? Would they be reminded of sections as a whole, or specific questions within them that have not yet been answered? How would that be done in the first place? Upon reflecting on whether users would work with them at all - as well as discussing among ourselves whether such a functionality reflects our desire to reinvent the wheel, or is an actually useful option - we removed the reminders altogether and decided to completely replace them with pop-up messages alerting the user that they have unfinished sub-tasks. In the sidebar and profile view, users can now distinguish between completed and uncompleted tasks through checkmarks (lack thereof implying and unfinished task) and styling changes (regular text opacity, as opposed to lowered opacity of finished tasks) that appear.')">
                         Reminders
                     </div>
-                    <div class="cloud-textbox" style="background-color: #87F5FB;;" onclick="showPopup('In general onboarding is a boring experiance and something that users do not particularly want to do. We started brainstorming how to make the process more enjoyable and came up with 2 specific things. 1) Add an estimated time of completion to encourage users too hold their attention 2) Add a sentence explaining what the purpose of the steps are to encourage them to complete it as we felt that understanding why it is important to complete a task would be encouraging to complete it')">
-                        Improving User experiance
+                    <div class="cloud-textbox" style="background-color: #F5F5F5;;" onclick="showPopup('Improving User Experience', 'In general, onboarding tends to be a tiresome experience for most users, which increases friction. Our pivotal goal in the project was to ensure a more enjoyable, close-to-immediate process that would not lead them to abandon Zest altogether. By brainstorming what elements, based on our personal experiences, we appreciate (or hate) in the onboarding processes of other sites, we came up with two primary components. 1: An estimated time of completion bar which encourages users to hold their attention. 2: A brief overview of why - and how - completing the following task will be beneficial for the user.')">
+                        Improving User Experience
                     </div>
-                    
                 </ul>
-            </div>
-            
-              
+            </div>  
           </section>
         <section class="section">
             <h2>Hi-Fi Wireframes</h2>
             <h3>
-              We reflected on the feedback and went back to the drawing board to incorporate new ideas 
-              to make a mock-up of the finished product.<br>
-              Here is the final result.
+              Having reflected on the feedback received, we incorporated our new ideas into the mock-up of the final product, presented below.
             </h3>
             <img src="assets/images/storyboard.png" alt="Hi-Fi wireframes">
-          
-            <h2>For a more detailed walkthrough please refer to the video and interactive prototype below ↓</h2>
-            
-            <div class="part4-container">
-                <div class="part4-block">
-                  <p class="part4-label">press play to watch us explain</p>
-                  <video width="600" height="450" controls>
+        </section>
+        <section class="section">
+            <h2>Final Interactive Prototype</h2>
+            <div style="display: flex; flex-direction: row; align-items: center; gap:30px">
+                 <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
+                 <p class="part4-label">Walkthrough:</p>
+                  <video width="600" height="400" controls>
                     <source src="movie.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
                   </video>
                 </div>
-              
-
-                <div class="part4-block">
-                  <p class="part4-label">try it yourself</p>
+                <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
+                    <p class="part4-label">Prototype:</p>
                   <iframe
                     style="border: 1px solid rgba(0, 0, 0, 0.1);"
                     width="600"
-                    height="450"
+                    height="400"
                     src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/UPW3hMsBXH5WDLSdXLJMiL/Hi-Fi-prototype-final?page-id=0%3A1&node-id=64-119&starting-point-node-id=64%3A119&scaling=scale-down&content-scaling=fixed"
                     allowfullscreen
                   ></iframe>
                 </div>
               </div>
-              
           </section>
     </div>
     <footer>
