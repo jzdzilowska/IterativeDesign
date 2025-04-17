@@ -22,24 +22,48 @@
 <body>
     <header>
         <h1>ITERATIVE DESIGN</h1>
-        <h3><u>A redesign of Zest's onboarding UI.</u> Transforms a fragmented, self-guided setup process into a structured, intuitive flow that reduces reliance on customer support, shortens time to completion, and improves overall usability.</h3>
+        <h3><u><br>A redesign of Zest's onboarding UI.</u></h3>
     </header>
     <div class="container">
         <section class="section">
-            <h2>...CONSIDERATIONS/ GOALS...</h2>
-            <h3>Description </h3>
-            <div class="notes-container">
-                <div class="post-it">Interface- e were desiging for a website interface only.
-                    </div>
-                <div class="post-it">Audience-
-                    </div>
-                <div class="post-it">Goal 1
-                    </div>
-                <div class="post-it">Goal2
-                </div>
+            <h2>...PROJECT INTRODUCTION...</h2>
+            <h3>Below is the result of a collaboration between <a href="https://github.com/elisecarman">Elise Carman</a>, <a href="https://github.com/gaiello1">Gianna Aiello</a>, <a href="https://github.com/jzdzilowska">Julia Zdzilowska</a>, <a href="https://github.com/lordkariri">Karina Valrani</a>, and Zest - an online gifting platform helping brands scale by streamlining the gift-buying experience directly on their website. It offers multi-ship checkout, e-gifting, and corporate storefronts, with a concierge feature for brands to manage or process orders. Our redesign transforms a fragmented, self-guided setup process into a structured, intuitive flow that reduces reliance on customer support, shortens time to completion, and improves overall usability.
+            </h3>
+            <div><p style="margin-bottom: 0; font-style: italic;">Visit Site:</p></div>
+            <img 
+            src="assets/images/zestlanding.png" 
+            alt="Zest company logo" 
+            style="max-width: 600px; cursor: pointer;" 
+            onclick="window.location.href='https://www.zest.co/'" 
+          />
             </div>
         </section>
-
+        <section class="section">
+            <h2>...CONSIDERATIONS/GOALS...</h2>
+            <p>
+                Zest entrusted with redesigning their onboarding process for new vendors. 
+                Here are the few key details on the ask:
+            </p>
+            <div class="notes-container">
+                <div class="post-it">PROBLEM STATEMENT <br/><br/>
+                    Users must complete a series of setup tasks before they can fully operate within Zest. These tasks range from integrating with Shopify to defining shipping rules. Some tasks are required for functionality while others are optional.
+                </div>
+                <div class="post-it">USER IDENTITY <br/><br/>
+                    Zest clients often operate as teams rather than individuals. We should expect a client's finance team to provide details for Stripe Integration, while the marketing team handles branding. This implies the onboarding most likely cannot be completed in one go, and jumping around sections should be enabled.
+                </div>
+                <div class="post-it">USER MOTIVATIONS <br/><br/>
+                    Users can only start using the platform once they have properly onboarded. They don't have a lot of time or energy to spend on onboarding, and need to get to their actual task as quickly as possible.
+                    </div>
+                
+                <div class="post-it">USER PAIN POINTS <br/><br/>
+                    Historically new clients have requested customer success meetings to correctly finish onboarding. 
+                    There is no in app guided process besides a task checklist, and customers have pointed out a lack of clear instructions.
+                    The existing in app guidance must be improved.
+                    </div>
+                
+                
+            </div>
+        </section>
         <section class="section">
             <h2>...SKETCHES...</h2>
             <h3>We started by creating sketches to help visualize our ideas, weigh the benefits of alternative designs, and avoid premature decision-making. <br>We were designing for a desktop interface.</h3>
@@ -65,22 +89,21 @@
         </div>
         </section>
 
-        <section class="section">
-            <h2>Lo-Fi Wireframes</h2>
-            <h3>
-              Having reflected on the feedback received, we incorporated our new ideas into the mock-up of the final product, presented below.
-            </h3>
-            <img src="assets/images/storyboard.png" alt="Hi-Fi wireframes">
-        </section>
-        <section class="section">
-            <h2>Final Interactive Prototype</h2>
-            <div style="display: flex; flex-direction: row; align-items: center; gap:30px">
-                 <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
-                 <p class="part4-label">Walkthrough:</p>
-                  <video width="600" height="400" controls>
-                    <source src="movie.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                  </video>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="la.jpg" alt="Chania">
+                <div class="carousel-caption">
+                  <h3>Los Angeles</h3>
+                  <p>LA is always so much fun!</p>
                 </div>
                 <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
                     <p class="part4-label">Prototype:</p>
@@ -93,8 +116,26 @@
                   ></iframe>
                 </div>
               </div>
-          </section>
-        
+          
+              <div class="item">
+                <img src="ny.jpg" alt="New York">
+                <div class="carousel-caption">
+                  <h3>New York</h3>
+                  <p>We love the Big Apple!</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
         <section class="section">
             <div class="questions">
@@ -114,12 +155,8 @@
                         Progress bar
                     </div>
                 </ul>
-            <div class="sketch">
-                <img src="assets/images/interface.png" alt="Sketch of Self-Checkout Station">
-            </div>
         </div>
         </section>
-
         <section class="section">
             <h2>Critiques</h2>
             <h3>
@@ -160,7 +197,7 @@
             <div style="display: flex; flex-direction: row; align-items: center; gap:30px">
                  <div style="display: flex; flex-direction: column; align-items: center; align-content: center; text-align: center;">
                  <p class="part4-label">Walkthrough:</p>
-                  <video width="600" height="400" controls>
+                  <video width="600" height="400" controls style="margin-left: 70px;">
                     <source src="movie.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
                   </video>
