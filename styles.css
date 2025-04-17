@@ -18,7 +18,7 @@ body {
   font-weight: 300;
   margin: 0px;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #fffdfd;
   color: #141414;
   margin-block: 0px;
   display: flex;
@@ -89,9 +89,15 @@ a{
   text-decoration: none;
   text-decoration: underline;
   color: inherit; 
-  font-size: 25px;
   margin-block: 0;
+  font-style: italic;
+  padding: 2px; 
+  transition: 0.3s ease, color 0.3s ease;
+}
 
+a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .section {
@@ -328,4 +334,8 @@ footer a:hover {
   margin-bottom: 10px;
   font-size: 1.1rem;
   text-align: center;
+}
+
+.custom-link {
+  font-size: 20px;
 }
