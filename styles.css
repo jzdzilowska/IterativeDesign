@@ -144,8 +144,8 @@ a:hover {
   display: block;
   padding: 10px;
   margin: 5px 0;
-  border: 2px dotted #000;
-  background-color: #fff;
+  border: 2px dotted #c1ab93;
+  background-color: #fef7f0;
   font-size: 18px;
   color: #000;
   transition: transform 0.2s ease-in-out;
@@ -205,11 +205,11 @@ a:hover {
   vertical-align: middle;
 }
 
-.post-it:nth-child(1) { background-color: #240115; --rotation: -3deg; --index: 1; color: white}
-.post-it:nth-child(2) { background-color: #F3DAD8; --rotation: 2deg; --index: 2; }
-.post-it:nth-child(3) { background-color: #DE3C4B; --rotation: -2deg; --index: 3; }
-.post-it:nth-child(4) { background-color: #87F5FB; --rotation: 1deg; --index: 4; }
-.post-it:nth-child(5) { background-color: #2F131E; --rotation: -1deg; --index: 5; color:white}
+.post-it:nth-child(1) { background-color: #F87315; --rotation: -3deg; --index: 1; color: white}
+.post-it:nth-child(2) { background-color: #fef6c2; --rotation: 2deg; --index: 2; }
+.post-it:nth-child(3) { background-color: #F4F4F5; --rotation: -2deg; --index: 3; }
+.post-it:nth-child(4) { background-color: #FFD335; --rotation: 1deg; --index: 4; }
+.post-it:nth-child(5) { background-color: #FFD335; --rotation: -1deg; --index: 5; color:white}
 
 .post-it:hover {
   animation: shiver 1s infinite ease-in-out;
@@ -267,6 +267,7 @@ a:hover {
   width: 375px;
   text-align: justify;
   text-align-last: center;
+
 }
 
 .persona img[alt="Empathy Map for Anxious Amber - the unsure freshman"] { 
