@@ -338,3 +338,28 @@ footer a:hover {
 .custom-link {
   font-size: 20px;
 }
+
+.final {
+  width: 80%;
+  margin-bottom: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final h2 {
+  font-weight: 500;
+  font-size: 45px;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-style: italic;
+}
+
+.final h3{
+  font-size: 17px;
+  text-align: justify;
+  text-align-last: center;
+}
